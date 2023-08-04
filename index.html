@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .meet-our-team {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profile-card {
+      display: flex;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      width: 80%;
+      margin: 40px auto;
+      transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out; /* Added transition for box-shadow and filter */
+    }
+
+    .profile-image {
+      flex: 30%;
+      overflow: hidden; /* Hide overflow for animation */
+    }
+
+    .profile-image img {
+      width: 100%;
+      min-height: 100%;
+      transition: transform 0.3s ease-in-out; /* Added transform transition */
+    }
+
+    .profile-details {
+      flex: 70%;
+      padding: 10px;
+    }
+
+    .profile-name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .profile-bio {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: rgb(168, 168, 168);
+    }
+
+    .title {
+      color: grey;
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    .profile-bio {
+      color: rgb(86, 86, 86);
+      font-size: 1rem;
+    }
+
+    /* Add box-shadow and brightness on hover */
+    .profile-card:hover {
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 6px;
+      filter: brightness(110%);
+    }
+
+    /* Add scale-up animation on image hover */
+    .profile-image:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 768px) {
+      .profile-card {
+        flex-direction: column;
+      }
+      .profile-image,
+      .profile-details {
+        flex: 100%;
+        text-align: center;
+      }
+      .profile-image img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .profile-name {
+        font-size: 28px;
+        margin-top: 0;
+      }
+      .title,
+      .profile-bio {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="meet-our-team">Meet Our Team</div>
+
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="gettyimages-1336755053-1024x1024.jpg" alt="Profile Image">
+    </div>
+    <div class="profile-details">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="title">CEO & Founder</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <div class="profile-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique architecto iure aperiam dicta sit consequuntur, vel blanditiis, facilis magnam doloremque molestiae sequi debitis nemo numquam ducimus ipsa pariatur sed eum.
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="gettyimages-1336755053-1024x1024.jpg" alt="Profile Image">
+    </div>
+    <div class="profile-details">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="title">CEO & Founder</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <div class="profile-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique architecto iure aperiam dicta sit consequuntur, vel blanditiis, facilis magnam doloremque molestiae sequi debitis nemo numquam ducimus ipsa pariatur sed eum.
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="gettyimages-1336755053-1024x1024.jpg" alt="Profile Image">
+    </div>
+    <div class="profile-details">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="title">CEO & Founder</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <div class="profile-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique architecto iure aperiam dicta sit consequuntur, vel blanditiis, facilis magnam doloremque molestiae sequi debitis nemo numquam ducimus ipsa pariatur sed eum.
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="gettyimages-1336755053-1024x1024.jpg" alt="Profile Image">
+    </div>
+    <div class="profile-details">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="title">CEO & Founder</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <div class="profile-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique architecto iure aperiam dicta sit consequuntur, vel blanditiis, facilis magnam doloremque molestiae sequi debitis nemo numquam ducimus ipsa pariatur sed eum.
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add more profile cards here if needed -->
+
+</body>
